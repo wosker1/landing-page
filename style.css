@@ -1,5 +1,8 @@
-div {
-
+.img {
+    border-radius: 8px;
+    border: 2px solid #3882F6;
+    padding: 50px;
+    margin-bottom: 10px;
 }
 
 body {
@@ -7,6 +10,7 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -14,7 +18,6 @@ body {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
-    align-items: center;
 }
 
 .header {
@@ -55,10 +58,10 @@ body {
 }
 
 ul {
-   list-style: none;
-   display: flex;
-   flex-direction: row;
-   gap: 18px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
 }
 
 a {
@@ -70,7 +73,7 @@ a {
 button, .recruit {
     background-color: #3882F6;
     color: white;
-}
+    }
 
 #description {
     border: none;
@@ -85,21 +88,47 @@ button, .recruit {
     font-size: 36px;
     color: #1F2937;
     font-weight: 900;
+    margin-bottom: 30px;
 }
 
 .quote {
     background-color: #E5E7EB;
-    font-size: 36px;
+    font-size: 20px;
     color: #1F2937;
     font-weight: 300;
     font-style: italic;
+    padding: 30px;
+}
+
+.qcontainer{
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.vip {
+    font-weight: 900;
+    margin-left: auto;
 }
 
 .info {
     display: flex;
     flex: 1;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.box {
+    max-width: 200px;
 }
 
 .recruit {
@@ -107,8 +136,29 @@ button, .recruit {
     border-radius: 8px;
     width: 900px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 100px;
     margin: 50px 500px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.rec1 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#recruit {
+    border: none;
+    border-radius: 8px;
+    border: 2px solid white;
+    font-size: 16px;
+    width: 150px;
+    padding: 5px;
 }
